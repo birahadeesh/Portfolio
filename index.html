@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section" data-aos="fade-up">
+        <div class="container hero-content">
+            <div class="hero-avatar">
+                <img src="profile.jpg" alt="Avatar" />
+            </div>
+            <h1 class="hero-title gradient-text">Hi, I'm <span>Birahadeeshwaran S</span></h1>
+            <p class="hero-subtitle">AI/ML Enthusiast & Software Developer</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">See My Work</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                <a href="Resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">View Resume</a>
+            </div>
+        </div>
+        <div class="hero-bg-shapes">
+            <div class="shape shape1"></div>
+            <div class="shape shape2"></div>
+            <div class="shape shape3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section glass" data-aos="fade-up" data-aos-delay="100">
+        <div class="container about-content">
+            <h2>About Me</h2>
+            <p>
+                Hey there! I'm currently pursuing my B.Tech in Computer Science and Engineering with a specialization in
+                AI & ML at SRM University. I love building things whether it's AI-driven applications, intuitive
+                software solutions, or efficient tools that solve real-world problems.<br><br>
+                I have a strong passion for Web Development, Python programming, data integrity, and creating
+                user-friendly applications.
+                Some of my projects include a hotel management system, a file system recovery tool, and AI-powered
+                solutions designed to make life easier. I'm always excited to explore new technologies, collaborate with
+                like-minded individuals, and push the boundaries of what's possible in AI and software development.
+            </p>
+            <!-- Removed about-stats section as per user request -->
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section" data-aos="fade-up" data-aos-delay="200">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill">
+                    <span>HTML</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>CSS</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>React</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>UI/UX</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section glass" data-aos="fade-up" data-aos-delay="300">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="0">
+                    <a href="https://f1-dashboard-qwcn.onrender.com/" target="_blank" rel="noopener">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop"
+                            alt="F1 Dashboard" />
+                        <div class="project-info">
+                            <h3>F1 Dashboard</h3>
+                            <p>Interactive Formula 1 dashboard with real-time race data, driver statistics, team
+                                performance metrics, and live race tracking. Built with modern web technologies for
+                                comprehensive F1 insights.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
+                        alt="E-commerce Website" />
+                    <div class="project-info">
+                        <h3>E-commerce Website</h3>
+                        <p>Full-stack e-commerce platform with modern UI and secure payment integration. (In Progress)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates-section glass" data-aos="fade-up" data-aos-delay="350">
+        <div class="container">
+            <h2>Certificates</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card" data-aos="flip-left" data-aos-delay="0">
+                    <a href="DIP.png" target="_blank" rel="noopener">
+                        <img src="DIP.png" alt="DIP Certificate" />
+                        <div class="certificate-info">
+                            <h3>Digital Image Processing</h3>
+                            <p>Course Completion</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="certificate-card" data-aos="flip-left" data-aos-delay="100">
+                    <a href="Java Basic.png" target="_blank" rel="noopener">
+                        <img src="Java Basic.png" alt="Java Basic Certificate" />
+                        <div class="certificate-info">
+                            <h3>Java Basic</h3>
+                            <p>Programming Fundamentals</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="certificate-card" data-aos="flip-left" data-aos-delay="200">
+                    <a href="Python Basic.png" target="_blank" rel="noopener">
+                        <img src="Python Basic.png" alt="Python Basic Certificate" />
+                        <div class="certificate-info">
+                            <h3>Python Basic</h3>
+                            <p>Programming Fundamentals</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="certificate-card" data-aos="flip-left" data-aos-delay="300">
+                    <a href="Problem Solving Basic.png" target="_blank" rel="noopener">
+                        <img src="Problem Solving Basic.png" alt="Problem Solving Basic Certificate" />
+                        <div class="certificate-info">
+                            <h3>Problem Solving Basic</h3>
+                            <p>Algorithm & Logic</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="certificate-card" data-aos="flip-left" data-aos-delay="400">
+                    <a href="MongoDBBasicsforStudents.png" target="_blank" rel="noopener">
+                        <img src="MongoDBBasicsforStudents.png" alt="MongoDB Basics Certificate" />
+                        <div class="certificate-info">
+                            <h3>MongoDB Basics</h3>
+                            <p>Database Management</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="certificate-card" data-aos="flip-left" data-aos-delay="500">
+                    <a href="DSA 30-days bootcamp by Unstop.jpg" target="_blank" rel="noopener">
+                        <img src="DSA 30-days bootcamp by Unstop.jpg" alt="DSA Bootcamp Certificate" />
+                        <div class="certificate-info">
+                            <h3>DSA 30-Days Bootcamp</h3>
+                            <p>Unstop, 2025</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section" data-aos="fade-up" data-aos-delay="400">
+        <div class="container contact-content">
+            <h2>Contact</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p><strong>Email:</strong> birahan2005@gmail.com</p>
+                <p><strong>Location:</strong> Chennai, India</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" data-aos="fade-up" data-aos-delay="500">
+        <div class="container">
+            <div class="footer-socials">
+                <a href="https://github.com/birahadeesh" aria-label="GitHub" target="_blank" rel="noopener"><svg
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.11.793-.26.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-.89-.61.067-.598.067-.598 1.004.07 1.532 1.032 1.032 1.032.872 1.495 2.287 1.063 2.846.813.09-.632.34-1.063.618-1.308-2.665-.305-5.466-1.334-5.466-5.93 0-1.31.469-2.38 1.236-3.22-.124-.304-.535-1.527.117-3.18 0 0 1.008-.322 3.3 1.23.96-.267 1.98-.4 3-.404 1.02.004 2.04.137 3 .404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.876.118 3.18.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.624-5.479 5.92.43.37.823 1.1.823 2.22v3.293c0 .32.192.694.801.576C20.565 21.797 24 17.298 24 12c0-6.63-5.37-12-12-12z" />
+                    </svg></a>
+                <a href="https://www.linkedin.com/in/birahadeeshwaran-suresh-955868288/" aria-label="LinkedIn"
+                    target="_blank" rel="noopener"><svg viewBox="0 0 24 24">
+                        <path
+                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg></a>
+                <a href="mailto:birahan2005@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24">
+                        <path
+                            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zm0 12H4V8.99l8 6.99 8-6.99V18z" />
+                    </svg></a>
+            </div>
+            <p>© 2024 Birahadeeshwaran S. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: false,
+            duration: 900,
+            offset: 60,
+            easing: 'ease-out-cubic',
+        });
+    </script>
+</body>
+
+</html>

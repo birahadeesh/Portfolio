@@ -402,7 +402,7 @@ function App() {
             </a>
           </div>
           <p className="text-gray-400">
-            © 2024 Your Name. All rights reserved.
+            © 2025 Your Name. All rights reserved.
           </p>
         </div>
       </footer>

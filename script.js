@@ -21,12 +21,21 @@ links.forEach(link => {
     });
 });
 
-// Contact form alert
+// Contact form handling for Netlify
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-        alert('Thank you for reaching out! I will get back to you soon.');
-        contactForm.reset();
+        // Let Netlify handle the form submission
+        // Show a loading state or success message after submission
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
+
+        // Reset button after a delay (Netlify will handle the actual submission)
+        setTimeout(() => {
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+        }, 2000);
     });
 } 

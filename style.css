@@ -621,7 +621,7 @@ html {
     right: 30px;
     width: 50px;
     height: 50px;
-    background-color: #cc00ff;
+    background-color: #00D9FF;
     color: white;
     border: none;
     border-radius: 50%;
@@ -636,7 +636,7 @@ html {
 }
 
 .back-to-top:hover {
-    background-color: #ffffff;
+    background-color: #00b8cc;
 }
 
 .back-to-top.show {

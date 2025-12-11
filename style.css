@@ -627,10 +627,12 @@ html {
     border-radius: 50%;
     font-size: 24px;
     cursor: pointer;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
     transition: background-color 0.3s, opacity 0.3s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -640,5 +642,6 @@ html {
 }
 
 .back-to-top.show {
-    display: flex;
+    opacity: 1;
+    pointer-events: auto;
 }

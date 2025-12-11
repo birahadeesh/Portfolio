@@ -5,7 +5,6 @@ navToggle.addEventListener('click', () => {
     navLinks.classList.toggle('open');
 });
 
-// Smooth scroll for nav links
 const links = document.querySelectorAll('.nav-links a');
 links.forEach(link => {
     link.addEventListener('click', function (e) {
@@ -26,7 +25,7 @@ const backToTopButton = document.getElementById('backToTop');
 
 if (backToTopButton) {
     window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 100) {
+        if (window.pageYOffset > 50) {
             backToTopButton.classList.add('show');
         } else {
             backToTopButton.classList.remove('show');
@@ -45,14 +44,11 @@ if (backToTopButton) {
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
-        // Let Netlify handle the form submission
-        // Show a loading state or success message after submission
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
 
-        // Reset button after a delay (Netlify will handle the actual submission)
         setTimeout(() => {
             submitBtn.textContent = originalText;
             submitBtn.disabled = false;

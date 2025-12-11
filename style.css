@@ -616,7 +616,7 @@ html {
 
 /* Back to Top Button */
 .back-to-top {
-    position: relative;
+    position: fixed;
     bottom: 30px;
     right: 30px;
     width: 50px;

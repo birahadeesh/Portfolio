@@ -621,8 +621,8 @@ html {
     right: 30px;
     width: 50px;
     height: 50px;
-    background-color: #00D9FF;
-    color: white;
+    background: linear-gradient(135deg, #7c3aed, #38bdf8);
+    color: #ffffff;
     border: none;
     border-radius: 50%;
     font-size: 24px;
@@ -633,12 +633,12 @@ html {
     z-index: 1000;
     opacity: 0;
     pointer-events: none;
-    transition: background-color 0.3s, opacity 0.3s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, opacity 0.3s;
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.35);
 }
 
 .back-to-top:hover {
-    background-color: #00b8cc;
+    background: linear-gradient(135deg, #6d28d9, #0ea5e9);
 }
 
 .back-to-top.show {

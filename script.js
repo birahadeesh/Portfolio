@@ -25,7 +25,7 @@ const backToTopButton = document.getElementById('backToTop');
 
 if (backToTopButton) {
     window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 50) {
+        if (window.pageYOffset > 100) {
             backToTopButton.classList.add('show');
         } else {
             backToTopButton.classList.remove('show');
